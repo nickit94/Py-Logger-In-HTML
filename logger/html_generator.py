@@ -138,6 +138,7 @@ def generate_html(logger):
     html += HEAD_END
     html += BODY_START
     html += CARD_BLOCK.format(info=logger.count_info,
+                              success=logger.count_success,
                               debug=logger.count_debug,
                               warning=logger.count_warning,
                               error=logger.count_error,

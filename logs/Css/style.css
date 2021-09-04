@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Dejavu-Sans-Mono;
-	src: url(../Font/Dejavu-Sans-Mono.ttf)
+	font-family: CustomFont;
+	src: url(../Font/CustomFont.ttf)
 }
 
 * {
@@ -77,19 +77,18 @@ a:hover {
 .info {
 	background-color: #FAFAFA;
 }
-
+.success {
+	background-color: #C8E6C9;
+}
 .debug {
 	background-color: #B2EBF2;
 }
-
 .warning {
 	background-color: #FFECB3;
 }
-
 .error {
 	background-color: #FFCCBC;
 }
-
 .critical {
 	background-color: #C51162;
 }
@@ -159,7 +158,7 @@ a:hover {
 }
 
 .table100-body td {
-	font-family: Dejavu-Sans-Mono;
+	font-family: CustomFont, Consolas;
 	line-height: 1.4;
 }
 

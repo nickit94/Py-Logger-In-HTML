@@ -29,6 +29,7 @@ class BaseConfig:
 
     """ Счетчики уровней логов """
     count_info: int = 0
+    count_success: int = 0
     count_debug: int = 0
     count_warning: int = 0
     count_error: int = 0
@@ -41,6 +42,8 @@ class BaseConfig:
         """
         if log_item.level == 'info':
             self.count_info += 1
+        elif log_item.level == 'success':
+            self.count_success += 1
         elif log_item.level == 'debug':
             self.count_debug += 1
         elif log_item.level == 'warning':
@@ -111,6 +114,7 @@ ACCORDION_START = '<div class="accordion__item js-accordion-item active">' \
 ACCORDION_END = '</div></div>'
 CARD_BLOCK = '<div class="container-cards wrap">' \
              '<div class="grid-card info"><div class="card-text">INFO: {info}</div></div>' \
+             '<div class="grid-card success"><div class="card-text">SUCCESS: {success}</div></div>' \
              '<div class="grid-card debug"><div class="card-text">DEBUG: {debug}</div></div>' \
              '<div class="grid-card warning"><div class="card-text">WARNING: {warning}</div></div>' \
              '<div class="grid-card error"><div class="card-text">ERROR: {error}</div></div>' \
